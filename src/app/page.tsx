@@ -5,7 +5,7 @@ import { SkillsSection } from "@/components/skills-section"
 
 const projectItems = [
   {
-    title: "google docs clone",
+    title: "Online Docs Editor",
     period: "Jan 2025",
     description:
       "responsive and intuitive rich text editor with comprehensive text formatting tools. and real-time collaboration",

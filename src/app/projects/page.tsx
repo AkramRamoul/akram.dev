@@ -4,7 +4,28 @@ import { Metadata } from "next"
 
 const projects = [
   {
-    title: "google docs clone",
+    title: "Multi-Tenant Store",
+    role: "Nov 2025",
+    description:
+      "a multi-tenant e-commerce platform enabling users to create and manage their own online stores with payment integration",
+    infos: [
+      "multi-tenant architecture allowing users to create and manage their own online stores",
+      "Subdomain routing for each store",
+      "Stripe Connect integration",
+      "Merchant dashboard for store management",
+    ],
+    technologies: [
+      "Nextjs",
+      "React",
+      "Stripe",
+      "Payload CMS ",
+      "TypeScript",
+      "Tailwind CSS",
+    ],
+    href: "https://ecommerce-ecru-nu-50.vercel.app/",
+  },
+  {
+    title: "Online Docs Editor",
     role: "Jan 2025",
     description:
       "responsive and intuitive rich text editor with comprehensive text formatting tools. and real-time collaboration",
@@ -35,7 +56,7 @@ const projects = [
     href: "https://formbuilder-xcuz.vercel.app/",
   },
   {
-    title: "Messenger Clone",
+    title: "Messaging App",
     description:
       "a real-time chat application with user authentication and media sharing",
     role: "Sep 2024",
