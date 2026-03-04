@@ -4,6 +4,28 @@ import { Metadata } from "next"
 
 const projects = [
   {
+    title: "Clinic Management System",
+    role: "Feb 2026",
+    description:
+      "A desktop-based digital health solution built with Electron, sold to and currently used by private clinics to solve paper-based management challenges and streamline clinical workflows.",
+    infos: [
+      "Digitized entire clinical workflows to replace unreliable paper-based systems",
+      "Electron-based desktop application for robust offline performance",
+      "Digital prescription system with template support, enhancing accuracy",
+      "Comprehensive patient medical records and consultation history tracking",
+      "Integrated financial tracking for clinic expenses and revenue management",
+    ],
+    technologies: [
+      "Electron",
+      "TypeScript",
+      "Next.js",
+      "Drizzle ORM",
+      "LibSQL",
+      "Tailwind CSS",
+    ],
+    href: "#",
+  },
+  {
     title: "Multi-Tenant Store",
     role: "Nov 2025",
     description:
@@ -11,7 +33,7 @@ const projects = [
     infos: [
       "multi-tenant architecture allowing users to create and manage their own online stores",
       "Subdomain routing for each store",
-      "Stripe Connect integration",
+      "Stripe Connect integration for paiment",
       "Merchant dashboard for store management",
     ],
     technologies: [
@@ -74,7 +96,7 @@ const projects = [
       "pusher",
       "cloudinary",
     ],
-    href: "https://messenger-clone-sigma-nine.vercel.app",
+    href: "https://realtime-chat-app-1-alpha.vercel.app",
   },
   {
     title: "Digital Marketplace",
