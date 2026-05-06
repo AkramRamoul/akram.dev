@@ -7,7 +7,7 @@ const links = [
     title: "linkedin",
     href: "https://www.linkedin.com/in/ahmed-akram-ramoul-0a3207305/",
   },
-  { title: "resume", href: "/resume1.pdf" },
+  { title: "resume", href: "/CV.pdf" },
 ]
 
 export function LinksSection() {
