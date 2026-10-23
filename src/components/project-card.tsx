@@ -8,7 +8,7 @@ type ProjectCardProps = {
   period?: string
   infos: string[]
   technologies: string[]
-  href: string
+  href?: string
 }
 
 export function ProjectCard({
@@ -22,14 +22,22 @@ export function ProjectCard({
 }: ProjectCardProps) {
   return (
     <div className="group border border-gray-800 p-6 transition-colors hover:border-accent/50">
-      <Link href={href} target="_blank">
+      {href ? (
+        <Link href={href} target="_blank">
+          <div className="flex justify-between items-start mb-4">
+            <h2 className="text-2xl font-bold text-white group-hover:text-accent transition-colors">
+              {title}
+            </h2>
+            <ArrowUpRight className="w-5 h-5 text-gray-400 group-hover:text-accent transition-colors group-hover:translate-x-1 group-hover:-translate-y-1" />
+          </div>
+        </Link>
+      ) : (
         <div className="flex justify-between items-start mb-4">
           <h2 className="text-2xl font-bold text-white group-hover:text-accent transition-colors">
             {title}
           </h2>
-          <ArrowUpRight className="w-5 h-5 text-gray-400 group-hover:text-accent transition-colors group-hover:translate-x-1 group-hover:-translate-y-1" />
         </div>
-      </Link>
+      )}
 
       <p className="text-sm text-gray-400 mb-4">
         {role} {period && `(${period})`}

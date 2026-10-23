@@ -16,10 +16,12 @@ export function Header() {
         </div>
       </div>
       <p className="leading-relaxed animate-fade-in-up">
-        i&apos;m a 24 y/o frontend developer passionate about building clean,
-        modern, and user-friendly web applications. I specialize in React,
-        Next.js, and TypeScript, with experience crafting interactive UIs,
-        integrating APIs, and optimizing performance.
+        i&apos;m a 24 y/o full-stack developer who ships real products. i&apos;m
+        currently at Wanasis, building mobile apps with Ionic and Angular on
+        top of Java and ERP backends (Compiere, ERPNext). on the side, i
+        freelance: i built a clinic management system that&apos;s sold to and
+        used daily by private clinics. i work across web, mobile, and desktop
+        with React, Next.js, TypeScript, and Electron.
       </p>
     </header>
   )

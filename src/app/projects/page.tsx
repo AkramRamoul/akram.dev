@@ -5,42 +5,44 @@ import { Metadata } from "next"
 const projects = [
   {
     title: "Clinic Management System",
-    role: "Feb 2026",
+    role: "Freelance · Commercial product",
+    period: "Feb 2026",
     description:
-      "A desktop-based digital health solution built with Electron, sold to and currently used by private clinics to solve paper-based management challenges and streamline clinical workflows.",
+      "A commercial desktop application built with Electron and React, sold to and used daily by several private clinics to replace paper-based management and streamline clinical workflows.",
     infos: [
-      "Digitized entire clinical workflows to replace unreliable paper-based systems",
-      "Electron-based desktop application for robust offline performance",
-      "Digital prescription system with template support, enhancing accuracy",
-      "Comprehensive patient medical records and consultation history tracking",
-      "Integrated financial tracking for clinic expenses and revenue management",
+      "Took the product from requirements to delivery for paying clients, working directly with doctors and clinic staff",
+      "Replaced paper records across entire clinical workflows, eliminating data loss and improving patient tracking",
+      "Electronic health records with full consultation history per patient",
+      "Digital prescription system with reusable templates for faster, more accurate prescribing",
+      "Financial module for real-time tracking of clinic expenses, revenue, and billing",
+      "Offline-first desktop architecture with a local LibSQL database for reliability without internet",
     ],
     technologies: [
       "Electron",
       "TypeScript",
+      "React",
       "Next.js",
       "Drizzle ORM",
       "LibSQL",
       "Tailwind CSS",
     ],
-    href: "#",
   },
   {
     title: "Multi-Tenant Store",
     role: "Nov 2025",
     description:
-      "a multi-tenant e-commerce platform enabling users to create and manage their own online stores with payment integration",
+      "A multi-tenant e-commerce platform that lets anyone create and run their own independent online store, with built-in payments and payouts.",
     infos: [
-      "multi-tenant architecture allowing users to create and manage their own online stores",
-      "Subdomain routing for each store",
-      "Stripe Connect integration for paiment",
-      "Merchant dashboard for store management",
+      "Multi-tenant architecture with data isolation between independent merchant stores",
+      "Dynamic subdomain routing, giving each merchant a personalized storefront",
+      "Stripe Connect integration for secure multi-party payments and automated payouts",
+      "Merchant dashboard for product management, order tracking, and store configuration",
     ],
     technologies: [
-      "Nextjs",
+      "Next.js",
       "React",
-      "Stripe",
-      "Payload CMS ",
+      "Stripe Connect",
+      "Payload CMS",
       "TypeScript",
       "Tailwind CSS",
     ],
@@ -50,83 +52,97 @@ const projects = [
     title: "Online Docs Editor",
     role: "Jan 2025",
     description:
-      "responsive and intuitive rich text editor with comprehensive text formatting tools. and real-time collaboration",
+      "A Google Docs-style collaborative rich text editor with real-time multi-user editing, comments, and team workspaces.",
     infos: [
-      "real-time collaboration with multiple users",
-      "comprehensive text formatting options",
-      "live cursor indicators and selection highlights",
+      "Real-time collaboration with live cursors and selection highlights",
+      "Comments, mentions, and a notification system for document updates",
+      "Organization workspaces with secure invitation-based access",
+      "Rich formatting tools, margin controls, and formatting preservation",
     ],
-    technologies: ["typescript", "next.js", "clerk", "convex", "tailwind css"],
+    technologies: [
+      "TypeScript",
+      "Next.js",
+      "Clerk",
+      "Convex",
+      "Shadcn UI",
+      "Tailwind CSS",
+    ],
     href: "https://docs-psi-azure-94.vercel.app/",
   },
   {
-    title: "Form Builder",
-    role: "Aug 2024",
-    description:
-      "dynamic form builder with drag-and-drop interface, real-time preview, and customizable field options",
-    infos: [
-      "drag-and-drop interface for easy form creation",
-      "real-time preview of form changes",
-      "customizable field options including validation rules",
-    ],
-    technologies: [
-      "typescript",
-      "next.js",
-      "prisma",
-      "tailwind css, PostgreSQL",
-    ],
-    href: "https://formbuilder-xcuz.vercel.app/",
-  },
-  {
     title: "Messaging App",
-    description:
-      "a real-time chat application with user authentication and media sharing",
     role: "Sep 2024",
+    description:
+      "A real-time chat application for one-on-one and group conversations with authentication and media sharing.",
     infos: [
-      "Developed a real-time messaging system with Pusher for group and one-on-one chats.",
-      "integrated user authentication and profile management",
-      "enabled media sharing including images and files",
+      "Real-time messaging with Pusher for group and one-on-one chats",
+      "Google sign-in via NextAuth with profile management",
+      "Online/offline presence and read receipts",
+      "Image and file sharing through Cloudinary CDN",
+      "Validated forms with React Hook Form and real-time error feedback",
     ],
     technologies: [
-      "typescript",
-      "react",
-      "prisma",
+      "TypeScript",
+      "React",
+      "Next.js",
+      "Prisma",
       "NextAuth",
       "MongoDB",
-      "pusher",
-      "cloudinary",
+      "Pusher",
+      "Cloudinary",
     ],
     href: "https://realtime-chat-app-1-alpha.vercel.app",
   },
   {
     title: "Digital Marketplace",
-    description: "Interactive E-Commerce Platform",
     role: "Nov 2024",
+    description:
+      "An e-commerce marketplace for buying and selling digital products, with secure file uploads and authentication.",
     infos: [
-      "User-friendly marketplace with smooth navigation and interaction using Next.js and TypeScript.",
-      "Developed secure file upload functionality",
-      "Optimized database queries with Prisma and implemented secure user authentication using Kinde.",
+      "Smooth, responsive marketplace UI built with Next.js and TypeScript",
+      "Secure file upload and delivery for digital products",
+      "Optimized database queries with Prisma and secure authentication with Kinde",
+      "Client-side cart state management with Zustand",
     ],
     technologies: [
-      "typescript",
-      "next.js",
-      "prisma",
-      "kinde",
+      "TypeScript",
+      "Next.js",
+      "Prisma",
+      "Kinde",
       "PostgreSQL",
-      "zustand",
+      "Zustand",
     ],
     href: "https://marketplace-orpin-two.vercel.app/",
   },
   {
-    title: "Image & Design Tools",
+    title: "Form Builder",
+    role: "Aug 2024",
     description:
-      "A collection of lightweight, browser-based tools for designers and developers, including an SVG → PNG converter, corner radius generator, and more.",
-    role: "Dec 2024",
+      "A dynamic form builder with a drag-and-drop interface, real-time preview, and customizable fields.",
     infos: [
-      "Designed for fast, lightweight, and user-friendly workflows for developers and designers.",
-      "Implemented multiple tools including SVG to PNG converter, corner radius generator.",
+      "Drag-and-drop interface for building forms without code",
+      "Real-time preview of every change",
+      "Customizable field options including validation rules",
     ],
-    technologies: ["typescript", "next.js", "tailwind css"],
+    technologies: [
+      "TypeScript",
+      "Next.js",
+      "Prisma",
+      "PostgreSQL",
+      "Tailwind CSS",
+    ],
+    href: "https://formbuilder-xcuz.vercel.app/",
+  },
+  {
+    title: "Image & Design Tools",
+    role: "Dec 2024",
+    description:
+      "A collection of lightweight, browser-based tools for designers and developers, including an SVG → PNG converter and a corner radius generator.",
+    infos: [
+      "Fast, client-side tools with no uploads or sign-up required",
+      "SVG to PNG converter, corner radius generator, and more",
+    ],
+    technologies: ["TypeScript", "Next.js", "Tailwind CSS"],
     href: "https://image-tools-sandy.vercel.app/",
   },
 ]
@@ -140,7 +156,8 @@ export default function ProjectsPage() {
       </h1>
 
       <p className="text-gray-400 mb-12 leading-relaxed">
-        here are some of the projects i&apos;ve worked on. i love building tools
+        from commercial software used by real clinics to full-stack web apps,
+        here are some of the things i&apos;ve built. i love building tools
         and exploring new technologies along the way.
       </p>
 

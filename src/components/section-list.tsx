@@ -3,7 +3,7 @@ import { ArrowUpRight } from "lucide-react"
 
 export type Item = {
   title: string
-  href: string
+  href?: string
   period?: string
   description: string
 }
@@ -27,17 +27,28 @@ export function SectionList({
         <span className="text-accent mr-2">*</span> {title}
       </h2>
       <div className="space-y-8">
-        {items.map((item, index) => (
-          <div key={item.title} className="group">
-            <Link href={item.href} target="_blank">
+        {items.map((item) => {
+          const content = (
+            <>
               <h3 className="text-xl font-semibold mb-1 text-white group-hover:text-accent transition-colors duration-200">
                 {item.title}
               </h3>
               <p className="text-sm text-gray-400 mb-2">{item.period}</p>
               <p className="text-gray-300">{item.description}</p>
-            </Link>
-          </div>
-        ))}
+            </>
+          )
+          return (
+            <div key={item.title} className="group">
+              {item.href ? (
+                <Link href={item.href} target="_blank">
+                  {content}
+                </Link>
+              ) : (
+                content
+              )}
+            </div>
+          )
+        })}
       </div>
       {viewAllHref && (
         <Link

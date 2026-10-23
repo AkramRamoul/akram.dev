@@ -10,12 +10,15 @@ export function SkillsSection() {
         <div>
           <h3 className="text-lg font-bold mb-2">Programming Languages</h3>
           <p className="text-gray-300 mb-6">
-            TypeScript, Python, HTML, CSS,PHP
+            TypeScript, JavaScript, Java, Python, HTML, CSS, SCSS, PHP
           </p>
         </div>
         <div>
           <h3 className="text-lg font-bold mb-2">Frameworks & Libraries</h3>
-          <p className="text-gray-300 mb-6">React, Next.js, Node.js, Express</p>
+          <p className="text-gray-300 mb-6">
+            React, Next.js, Angular, Ionic, Node.js, Express, Jersey (JAX-RS),
+            Electron, Tailwind CSS
+          </p>
         </div>
         <div>
           <h3 className="text-lg font-bold mb-2">Databases</h3>
@@ -23,7 +26,8 @@ export function SkillsSection() {
         </div>
         <div>
           <h3 className="text-lg font-bold mb-2">Tools & Platforms</h3>
-          <p className="text-gray-300 mb-6">Git, Prisma, Drizzle, Docker</p>
+          <p className="text-gray-300 mb-6">Git, Docker, Prisma, Drizzle, Compiere ERP, ERPNext, Stripe, Payload
+            CMS, Vercel</p>
         </div>
       </div>
     </section>
